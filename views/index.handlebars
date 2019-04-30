@@ -1,0 +1,22 @@
+<img src="https://www.tasteofhome.com/wp-content/uploads/2017/10/exps28800_UG143377D12_18_1b_RMS-696x696.jpg" alt="burger">
+
+<h1>Eat that burger</h1>
+<div id="add-burgers">
+    <ul>
+        {{#each burgers}}
+        <li>
+            <p>Id: <span>{{this.id}}</span></p>
+            <p>Burger name: <span>{{this.burger_name}}</span></p>
+        </li>
+        {{/each}}
+    </ul>
+</div>
+<div id="devoured-burgers"></div>
+<div id= "burger-form">
+    <form class = "add-burger">
+        <label for = "burger"></label> <br>
+        <input type="text" id="burger" placeholder="add your burger here"> <br>
+        <button type="submit" id="submit">Submit</button>
+        <small>enter a burger you want to eat and click the submit button</small>
+    </form>
+</div>
